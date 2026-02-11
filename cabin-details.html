@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View cabin details at European Hut — photos, amenities, pricing, and booking for luxury private cabins on Cairo-Alexandria Desert Road.">
+  <meta name="keywords" content="European Hut cabin details, luxury cabin Egypt, private pool cabin, heated pool chalet, cabin rental Cairo">
+  <title id="pageTitle">Cabin Details — European Hut | &#1575;&#1604;&#1603;&#1608;&#1582; &#1575;&#1604;&#1571;&#1608;&#1585;&#1608;&#1576;&#1610;</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================
+       NAVIGATION
+       ======================================== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon" aria-hidden="true"></div>
+        <div>
+          <span class="nav-logo-text">European Hut</span>
+          <span class="nav-logo-arabic">&#1575;&#1604;&#1603;&#1608;&#1582; &#1575;&#1604;&#1571;&#1608;&#1585;&#1608;&#1576;&#1610;</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cabins.html" class="active">Cabins</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-auth">
+        <a href="login.html" class="btn-login">Sign In</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="cabins.html">Cabins</a>
+    <a href="experience.html">Experience</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-mobile-auth">
+      <a href="login.html" class="btn btn-outline">Sign In</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+
+  <!-- ========================================
+       PAGE HERO (dynamic)
+       ======================================== -->
+  <section class="page-hero" id="pageHero">
+    <div class="container page-hero-content">
+      <span class="section-label" id="heroBadge">Our Collection</span>
+      <h1 id="heroTitle">Cabin Details</h1>
+      <p id="heroSubtitle">Explore every detail of your private retreat.</p>
+    </div>
+  </section>
+  <div class="hero-divider"></div>
+
+  <!-- ========================================
+       BREADCRUMB
+       ======================================== -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true"></span>
+        <a href="cabins.html">Cabins</a>
+        <span class="breadcrumb-sep" aria-hidden="true"></span>
+        <span class="breadcrumb-current" id="breadcrumbCurrent">Cabin Details</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ========================================
+       GALLERY + CABIN INFO
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="detail-layout reveal">
+
+        <!-- Image Gallery -->
+        <div class="detail-gallery">
+          <div class="gallery-main-wrap">
+            <img id="galleryMainImg" src="" alt="" loading="eager">
+            <button class="gallery-arrow gallery-arrow-prev" id="galleryPrev" aria-label="Previous image">
+              <span></span>
+            </button>
+            <button class="gallery-arrow gallery-arrow-next" id="galleryNext" aria-label="Next image">
+              <span></span>
+            </button>
+            <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+
+        <!-- Cabin Info Sidebar -->
+        <div class="detail-sidebar">
+          <div class="detail-price-card">
+            <div class="detail-price">
+              <span class="detail-price-amount" id="sidebarPrice">12,000</span>
+              <span class="detail-price-unit">EGP / day</span>
+            </div>
+            <span class="detail-price-badge" id="sidebarBadge">Best Seller</span>
+          </div>
+
+          <div class="detail-quick-specs" id="sidebarSpecs">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="detail-sidebar-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg" style="width:100%;">Book This Cabin</a>
+            <a href="https://wa.me/201200081890" class="btn btn-outline btn-lg" target="_blank" rel="noopener" style="width:100%;">WhatsApp Us</a>
+          </div>
+
+          <div class="detail-sidebar-note">
+            <div class="icon-phone" style="flex-shrink:0;"></div>
+            <div>
+              <strong>Instant Booking</strong>
+              <p style="margin:0;">Call <a href="tel:+201200081890" style="color: var(--color-secondary); font-weight: 500;">01200081890</a> for real-time availability.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PROPERTY DETAILS GRID
+       ======================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
+        <span class="section-label">Property Details</span>
+        <h2 id="specsTitle">Cabin Specifications</h2>
+      </div>
+      <div class="specs-grid reveal" id="specsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       AMENITIES
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
+        <span class="section-label">Amenities</span>
+        <h2>Everything You Need</h2>
+        <p class="section-subtitle mx-auto">
+          Each cabin is designed to offer a complete, self-contained retreat.
+        </p>
+      </div>
+      <div class="detail-amenities reveal" id="amenitiesGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       DESCRIPTION
+       ======================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="detail-description reveal">
+        <div class="detail-description-content">
+          <span class="section-label">About This Cabin</span>
+          <h2 id="descTitle">Cabin Description</h2>
+          <div id="descBody">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+        <div class="detail-description-aside">
+          <div class="detail-highlight-card">
+            <div class="icon-privacy" style="width:24px;height:28px;"></div>
+            <h4>100% Privacy Guaranteed</h4>
+            <p>Your cabin is a private compound. No shared spaces, no neighboring guests.</p>
+          </div>
+          <div class="detail-highlight-card">
+            <div class="icon-heart" style="width:24px;height:22px;"></div>
+            <h4>European-Inspired Design</h4>
+            <p>Elegant finishes, quality materials, and a refined atmosphere throughout.</p>
+          </div>
+          <div class="detail-highlight-card">
+            <div class="icon-location" style="width:20px;height:26px;"></div>
+            <h4>Prime Location</h4>
+            <p>30 min past Sheikh Zayed on the Cairo&ndash;Alexandria Desert Road.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       INQUIRY FORM
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="detail-inquiry reveal">
+        <div class="detail-inquiry-info">
+          <span class="section-label">Get In Touch</span>
+          <h2>Inquire About This Cabin</h2>
+          <p>
+            Have questions or ready to book? Fill out the form and our team will
+            get back to you within hours, or contact us directly for immediate assistance.
+          </p>
+          <div class="detail-inquiry-contacts">
+            <div class="detail-inquiry-contact">
+              <div class="contact-card-icon"><div class="icon-phone"></div></div>
+              <div>
+                <strong>Call Us</strong>
+                <a href="tel:+201200081890">01200081890</a>
+              </div>
+            </div>
+            <div class="detail-inquiry-contact">
+              <div class="contact-card-icon"><div class="icon-phone"></div></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/201200081890" target="_blank" rel="noopener">Chat Now</a>
+              </div>
+            </div>
+            <div class="detail-inquiry-contact">
+              <div class="contact-card-icon"><div class="icon-instagram"></div></div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener">@bungalow_hut</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-inquiry-form">
+          <form id="inquiryForm" novalidate>
+            <input type="hidden" id="inquiryCabin" name="cabin" value="">
+            <div class="form-group">
+              <label for="inquiryName" class="form-label">Full Name</label>
+              <input type="text" id="inquiryName" class="form-input" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="inquiryEmail" class="form-label">Email Address</label>
+              <input type="email" id="inquiryEmail" class="form-input" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="inquiryPhone" class="form-label">Phone Number</label>
+              <input type="tel" id="inquiryPhone" class="form-input" placeholder="01XXXXXXXXX" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="inquiryDates" class="form-label">Preferred Dates</label>
+              <input type="text" id="inquiryDates" class="form-input" placeholder="e.g. March 15 - March 17">
+            </div>
+            <div class="form-group">
+              <label for="inquiryMessage" class="form-label">Message (Optional)</label>
+              <textarea id="inquiryMessage" class="form-input form-textarea" placeholder="Any special requests or questions..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       OTHER CABINS
+       ======================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
+        <span class="section-label">Explore More</span>
+        <h2>Other Cabins You May Like</h2>
+      </div>
+      <div class="grid grid-3 reveal" id="otherCabins">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CALL TO ACTION
+       ======================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label">Ready to Book?</span>
+        <h2>Secure Your Cabin Today</h2>
+        <p>
+          Contact us directly for real-time availability and to reserve your preferred dates.
+          Advance booking is recommended, especially for weekends and holidays.
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+201200081890" class="btn btn-primary btn-lg">Call Now</a>
+          <a href="https://wa.me/201200081890" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+        <a href="tel:+201200081890" class="cta-phone">01200081890</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon" aria-hidden="true"></div>
+            <div>
+              <span class="nav-logo-text">European Hut</span>
+              <span class="nav-logo-arabic">&#1575;&#1604;&#1603;&#1608;&#1582; &#1575;&#1604;&#1571;&#1608;&#1585;&#1608;&#1576;&#1610;</span>
+            </div>
+          </a>
+          <p>Luxury private cabin rentals on the Cairo&ndash;Alexandria Desert Road. European elegance, heated pools, and absolute privacy.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener" aria-label="Instagram"><div class="icon-instagram"></div></a>
+            <a href="https://www.facebook.com/profile.php?id=100063992444361&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><div class="icon-facebook"></div></a>
+            <a href="https://www.tiktok.com/@european.gott" target="_blank" rel="noopener" aria-label="TikTok"><div class="icon-camera"></div></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Our Cabins</a></li>
+            <li><a href="experience.html">The Experience</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Cabins</h4>
+          <ul class="footer-links">
+            <li><a href="cabin-details.html?id=1">Cabin One &mdash; The Oasis</a></li>
+            <li><a href="cabin-details.html?id=2">Cabin Two &mdash; The Haven</a></li>
+            <li><a href="cabin-details.html?id=3">Cabin Three &mdash; The Retreat</a></li>
+            <li><a href="cabin-details.html?id=4">Cabin Four &mdash; The Grand</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="icon-phone" style="flex-shrink:0;margin-top:3px;"></div>
+            <a href="tel:+201200081890">01200081890</a>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon-location" style="flex-shrink:0;margin-top:3px;"></div>
+            <span>Cairo&ndash;Alexandria Desert Road, 30 min past Sheikh Zayed</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon-instagram" style="flex-shrink:0;margin-top:3px;"></div>
+            <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener">@bungalow_hut</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 European Hut &mdash; &#1575;&#1604;&#1603;&#1608;&#1582; &#1575;&#1604;&#1571;&#1608;&#1585;&#1608;&#1576;&#1610;. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       LIGHTBOX
+       ======================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous image"><span></span></button>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next image"><span></span></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+  </div>
+
+  <!-- ========================================
+       JAVASCRIPT
+       ======================================== -->
+  <script>
+    /* ============================================================
+       CABIN DATA MODEL
+       ============================================================ */
+    var cabinData = [
+      {
+        id: 1,
+        name: "Cabin One \u2014 The Oasis",
+        tagline: "Our Signature Retreat",
+        badge: "Best Seller",
+        badgeClass: "badge-popular",
+        location: "European Countryside, Cairo\u2013Alexandria Desert Road",
+        price: "12,000",
+        priceNum: 12000,
+        currency: "EGP",
+        bedrooms: 3,
+        bathrooms: 2,
+        size: 200,
+        type: "Private Compound",
+        maxGuests: 8,
+        checkIn: "12:00 PM",
+        checkOut: "9:00 AM",
+        yearBuilt: 2024,
+        amenities: [
+          { name: "Indoor Heated Pool", icon: "icon-pool" },
+          { name: "Outdoor Heated Pool", icon: "icon-pool" },
+          { name: "100% Privacy", icon: "icon-privacy" },
+          { name: "3 Bedrooms", icon: "icon-bed" },
+          { name: "European Design", icon: "icon-heart" },
+          { name: "Family-Friendly", icon: "icon-guests" },
+          { name: "Air Conditioning", icon: "icon-wifi" },
+          { name: "Modern Bathrooms", icon: "icon-bathroom" },
+          { name: "Private Garden", icon: "icon-location" },
+          { name: "Parking", icon: "icon-check" },
+          { name: "BBQ Area", icon: "icon-check" },
+          { name: "Photography Allowed", icon: "icon-camera" }
+        ],
+        description: [
+          "Welcome to The Oasis \u2014 our signature retreat and the most beloved cabin in the European Hut collection. Nestled within its own private compound on the Cairo\u2013Alexandria Desert Road, this cabin offers an unmatched blend of European elegance and Egyptian warmth.",
+          "Step inside to discover three beautifully appointed bedrooms, each designed for comfort with quality mattresses, fresh linens, and ample storage. The open-plan living area features floor-to-ceiling windows that frame the surrounding landscape, filling the space with natural light during the day and creating a warm, intimate atmosphere by night.",
+          "The crown jewel of The Oasis is its dual pool setup \u2014 an indoor heated swimming pool perfect for cooler evenings, and an outdoor heated pool surrounded by manicured gardens. Whether you prefer a morning swim under the open sky or a late-night dip in the warmth of the indoor pool, The Oasis delivers both.",
+          "Every surface, fixture, and finish has been carefully selected to reflect a distinctly European aesthetic while maintaining the comfort and hospitality Egypt is known for. From the A-frame wooden ceilings to the curated lighting, every detail contributes to an experience that feels worlds away from the city \u2014 yet remains just 30 minutes past Sheikh Zayed."
+        ],
+        images: [
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.29%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM%20%281%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM%20%282%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM%20%283%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM%20%284%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.30%20PM%20%285%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.31%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.31%20PM%20%281%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.31%20PM%20%282%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.31%20PM%20%283%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.31%20PM%20%284%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.32%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.32%20PM%20%281%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.32%20PM%20%282%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.32%20PM%20%283%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.32%20PM%20%284%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.33%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.33%20PM%20%281%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.33%20PM%20%282%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.33%20PM%20%283%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.33%20PM%20%284%29.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.34%20PM.jpeg",
+          "Hut-1/WhatsApp%20Image%202026-02-10%20at%202.57.34%20PM%20%281%29.jpeg"
+        ]
+      },
+      {
+        id: 2,
+        name: "Cabin Two \u2014 The Haven",
+        tagline: "Space & Value",
+        badge: "Best Value",
+        badgeClass: "badge-value",
+        location: "European Countryside, Cairo\u2013Alexandria Desert Road",
+        price: "7,000",
+        priceNum: 7000,
+        currency: "EGP",
+        bedrooms: 4,
+        bathrooms: 5,
+        size: 280,
+        type: "Private Compound",
+        maxGuests: 8,
+        checkIn: "2:00 PM",
+        checkOut: "10:00 AM",
+        yearBuilt: 2024,
+        amenities: [
+          { name: "Swimming Pool", icon: "icon-pool" },
+          { name: "4 Master Bedrooms", icon: "icon-bed" },
+          { name: "5 Bathrooms", icon: "icon-bathroom" },
+          { name: "100% Privacy", icon: "icon-privacy" },
+          { name: "European Design", icon: "icon-heart" },
+          { name: "Family-Friendly", icon: "icon-guests" },
+          { name: "Air Conditioning", icon: "icon-wifi" },
+          { name: "3 Water Heaters", icon: "icon-check" },
+          { name: "Private Garden", icon: "icon-location" },
+          { name: "Parking", icon: "icon-check" },
+          { name: "BBQ Area", icon: "icon-check" },
+          { name: "Photography Allowed", icon: "icon-camera" }
+        ],
+        description: [
+          "The Haven is the most spacious cabin in the European Hut collection, designed for larger families and groups who value generous living spaces without compromising on quality or privacy.",
+          "Boasting four master bedrooms and five full bathrooms \u2014 three equipped with water heaters \u2014 this cabin comfortably accommodates up to 8 guests with room to spare. Each bedroom is thoughtfully furnished with quality mattresses, fresh linens, and ample wardrobe space.",
+          "The expansive outdoor area features a refreshing swimming pool surrounded by lush palm trees and a manicured green lawn, creating a resort-like atmosphere within your own private compound. The garden is perfect for barbecues, gatherings, or simply enjoying the peaceful desert surroundings.",
+          "At 7,000 EGP per day, The Haven represents the best value in our collection \u2014 offering more space, more bedrooms, and more bathrooms than any other cabin at an exceptional price point. It is the ideal choice for families seeking luxury, space, and privacy in equal measure."
+        ],
+        images: [
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM%20%281%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM%20%282%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM%20%283%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM%20%284%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM%20%281%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM%20%282%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM%20%283%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM%20%284%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.50%20PM%20%285%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.51%20PM.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.51%20PM%20%281%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.51%20PM%20%282%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.51%20PM%20%283%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.51%20PM%20%284%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.52%20PM.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.52%20PM%20%281%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.52%20PM%20%282%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.52%20PM%20%283%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.52%20PM%20%284%29.jpeg",
+          "Hut-2/WhatsApp%20Image%202026-02-10%20at%202.57.53%20PM.jpeg"
+        ]
+      },
+      {
+        id: 3,
+        name: "Cabin Three \u2014 The Retreat",
+        tagline: "Intimate & Warm",
+        badge: "New",
+        badgeClass: "badge-new",
+        location: "European Countryside, Cairo\u2013Alexandria Desert Road",
+        price: "11,000",
+        priceNum: 11000,
+        currency: "EGP",
+        bedrooms: 3,
+        bathrooms: 2,
+        size: 180,
+        type: "Private Compound",
+        maxGuests: 8,
+        checkIn: "2:00 PM",
+        checkOut: "10:00 AM",
+        yearBuilt: 2025,
+        amenities: [
+          { name: "Indoor Heated Pool", icon: "icon-pool" },
+          { name: "3 Bedrooms", icon: "icon-bed" },
+          { name: "100% Privacy", icon: "icon-privacy" },
+          { name: "European Design", icon: "icon-heart" },
+          { name: "Family-Friendly", icon: "icon-guests" },
+          { name: "Air Conditioning", icon: "icon-wifi" },
+          { name: "Modern Bathrooms", icon: "icon-bathroom" },
+          { name: "Private Garden", icon: "icon-location" },
+          { name: "Parking", icon: "icon-check" },
+          { name: "BBQ Area", icon: "icon-check" },
+          { name: "Mood Lighting", icon: "icon-star" },
+          { name: "Photography Allowed", icon: "icon-camera" }
+        ],
+        description: [
+          "The Retreat is designed for those who value intimacy, warmth, and a cozy atmosphere. This newest addition to the European Hut collection brings a fresh perspective to private cabin living with its modern design and inviting ambiance.",
+          "Three elegant bedrooms are complemented by an indoor heated swimming pool that transforms the interior into a private spa-like sanctuary. Whether you are enjoying a late-night swim or relaxing by the water with mood lighting casting a warm glow, The Retreat delivers an experience that is both serene and memorable.",
+          "The cabin's warm interiors feature carefully selected furnishings, atmospheric lighting, and a thoughtful layout that makes every space feel purposeful. A hanging swing chair by the pool adds a playful touch to the refined setting.",
+          "At 11,000 EGP per day, The Retreat is the perfect choice for couples seeking romance, small families looking for quality time, or anyone who appreciates a beautifully crafted environment. The indoor pool ensures year-round enjoyment regardless of the weather outside."
+        ],
+        images: [
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.11%20PM%20%281%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.12%20PM.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.12%20PM%20%281%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.12%20PM%20%282%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.12%20PM%20%283%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.12%20PM%20%284%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.13%20PM.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.13%20PM%20%281%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.13%20PM%20%282%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.13%20PM%20%283%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.13%20PM%20%284%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM%20%281%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM%20%283%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM%20%284%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM%20%285%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM%20%281%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM%20%282%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM%20%283%29.jpeg",
+          "Hut-3/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM%20%285%29.jpeg"
+        ]
+      },
+      {
+        id: 4,
+        name: "Cabin Four \u2014 The Grand",
+        tagline: "The Pinnacle of Luxury",
+        badge: "Premium",
+        badgeClass: "badge-premium",
+        location: "European Countryside, Cairo\u2013Alexandria Desert Road",
+        price: "15,000",
+        priceNum: 15000,
+        currency: "EGP",
+        bedrooms: 4,
+        bathrooms: 3,
+        size: 260,
+        type: "Private Compound",
+        maxGuests: 8,
+        checkIn: "12:00 PM",
+        checkOut: "9:00 AM",
+        yearBuilt: 2024,
+        amenities: [
+          { name: "Heated Indoor Glass Pool", icon: "icon-pool" },
+          { name: "Private Jacuzzi", icon: "icon-jacuzzi" },
+          { name: "4 Bedrooms", icon: "icon-bed" },
+          { name: "100% Privacy", icon: "icon-privacy" },
+          { name: "European Design", icon: "icon-heart" },
+          { name: "Family-Friendly", icon: "icon-guests" },
+          { name: "Air Conditioning", icon: "icon-wifi" },
+          { name: "Modern Bathrooms", icon: "icon-bathroom" },
+          { name: "Private Garden", icon: "icon-location" },
+          { name: "Parking", icon: "icon-check" },
+          { name: "BBQ Area", icon: "icon-check" },
+          { name: "Photography Allowed", icon: "icon-camera" }
+        ],
+        description: [
+          "The Grand represents the absolute pinnacle of the European Hut experience. This is our most prestigious cabin, designed for guests who accept nothing less than extraordinary.",
+          "Four luxurious bedrooms open onto a breathtaking heated indoor glass swimming pool that transforms with the light of day \u2014 from sun-drenched brilliance in the afternoon to an atmospheric, warmly lit sanctuary by night. The glass enclosure creates a seamless connection between indoors and out, making every swim feel like an event.",
+          "A private jacuzzi adds an extra layer of indulgence, perfect for unwinding after a day of exploration or as the centerpiece of a romantic evening. The warm bubbling water under the desert sky is an experience in itself.",
+          "Every surface, every finish, every detail in The Grand has been selected to exceed expectations. From the warm wooden interiors and hanging swing chair to the carefully curated lighting that sets the mood for any occasion, this cabin is not just a place to stay \u2014 it is a destination. At 15,000 EGP per day, The Grand is the definitive luxury escape on the Cairo\u2013Alexandria Desert Road."
+        ],
+        images: [
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.35%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.35%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.35%20PM%20%282%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.36%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.36%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.36%20PM%20%282%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.37%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.37%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.37%20PM%20%282%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.38%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.38%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.38%20PM%20%282%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.39%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.39%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.39%20PM%20%282%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.40%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.40%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.41%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.41%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.42%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.42%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.43%20PM.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.43%20PM%20%281%29.jpeg",
+          "Hut-4/WhatsApp%20Image%202026-02-10%20at%206.34.44%20PM.jpeg"
+        ]
+      }
+    ];
+
+    /* ============================================================
+       URL PARAM PARSING & CABIN SELECTION
+       ============================================================ */
+    var params = new URLSearchParams(window.location.search);
+    var cabinId = parseInt(params.get('id')) || 1;
+    var cabin = cabinData.find(function(c) { return c.id === cabinId; });
+
+    if (!cabin) {
+      cabin = cabinData[0];
+      cabinId = 1;
+    }
+
+    /* ============================================================
+       RENDER PAGE CONTENT
+       ============================================================ */
+
+    /* Page Title */
+    document.getElementById('pageTitle').textContent = cabin.name + ' \u2014 European Hut | \u0627\u0644\u0643\u0648\u062E \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064A';
+
+    /* Hero */
+    document.getElementById('heroBadge').textContent = cabin.tagline;
+    document.getElementById('heroTitle').textContent = cabin.name;
+    document.getElementById('heroSubtitle').textContent = cabin.location;
+
+    /* Breadcrumb */
+    document.getElementById('breadcrumbCurrent').textContent = cabin.name;
+
+    /* Sidebar Price & Badge */
+    document.getElementById('sidebarPrice').textContent = cabin.price;
+    var badgeEl = document.getElementById('sidebarBadge');
+    badgeEl.textContent = cabin.badge;
+    badgeEl.className = 'detail-price-badge cabin-card-badge ' + cabin.badgeClass;
+
+    /* Sidebar Quick Specs */
+    var specsHTML = '';
+    var quickSpecs = [
+      { icon: 'icon-bed', label: cabin.bedrooms + ' Bedrooms' },
+      { icon: 'icon-bathroom', label: cabin.bathrooms + ' Bathrooms' },
+      { icon: 'icon-guests', label: 'Up to ' + cabin.maxGuests + ' Guests' },
+      { icon: 'icon-clock', label: 'Check-in: ' + cabin.checkIn }
+    ];
+    quickSpecs.forEach(function(s) {
+      specsHTML += '<div class="detail-quick-spec">' +
+        '<div class="detail-quick-spec-icon"><div class="' + s.icon + '"></div></div>' +
+        '<span>' + s.label + '</span>' +
+        '</div>';
+    });
+    document.getElementById('sidebarSpecs').innerHTML = specsHTML;
+
+    /* Specs Grid */
+    document.getElementById('specsTitle').textContent = cabin.name + ' \u2014 Specifications';
+    var allSpecs = [
+      { icon: 'icon-bed', label: 'Bedrooms', value: cabin.bedrooms },
+      { icon: 'icon-bathroom', label: 'Bathrooms', value: cabin.bathrooms },
+      { icon: 'icon-guests', label: 'Max Guests', value: cabin.maxGuests },
+      { icon: 'icon-map', label: 'Property Size', value: cabin.size + ' m\u00B2' },
+      { icon: 'icon-heart', label: 'Property Type', value: cabin.type },
+      { icon: 'icon-clock', label: 'Check-in', value: cabin.checkIn },
+      { icon: 'icon-calendar', label: 'Check-out', value: cabin.checkOut },
+      { icon: 'icon-star', label: 'Year Built', value: cabin.yearBuilt }
+    ];
+    var specsGridHTML = '';
+    allSpecs.forEach(function(s) {
+      specsGridHTML += '<div class="spec-card">' +
+        '<div class="spec-card-icon"><div class="' + s.icon + '"></div></div>' +
+        '<div class="spec-card-label">' + s.label + '</div>' +
+        '<div class="spec-card-value">' + s.value + '</div>' +
+        '</div>';
+    });
+    document.getElementById('specsGrid').innerHTML = specsGridHTML;
+
+    /* Amenities */
+    var amenitiesHTML = '';
+    cabin.amenities.forEach(function(a) {
+      amenitiesHTML += '<div class="detail-amenity-item">' +
+        '<div class="detail-amenity-icon"><div class="' + a.icon + '"></div></div>' +
+        '<span>' + a.name + '</span>' +
+        '</div>';
+    });
+    document.getElementById('amenitiesGrid').innerHTML = amenitiesHTML;
+
+    /* Description */
+    document.getElementById('descTitle').textContent = 'About ' + cabin.name;
+    var descHTML = '';
+    cabin.description.forEach(function(p) {
+      descHTML += '<p>' + p + '</p>';
+    });
+    document.getElementById('descBody').innerHTML = descHTML;
+
+    /* Inquiry Form - hidden cabin field */
+    document.getElementById('inquiryCabin').value = cabin.name;
+
+    /* Other Cabins */
+    var otherCabins = cabinData.filter(function(c) { return c.id !== cabinId; });
+    var otherHTML = '';
+    otherCabins.forEach(function(c) {
+      var thumbImg = c.images[0] || '';
+      otherHTML += '<div class="cabin-card">' +
+        '<div class="cabin-card-image">' +
+        '<img src="./' + thumbImg + '" alt="' + c.name + '" class="cabin-img-placeholder" loading="lazy">' +
+        '<span class="cabin-card-badge ' + c.badgeClass + '">' + c.badge + '</span>' +
+        '<div class="cabin-card-price"><span class="price-amount">' + c.price + '</span><span class="price-unit">EGP / day</span></div>' +
+        '</div>' +
+        '<div class="cabin-card-body">' +
+        '<h3 class="cabin-card-title">' + c.name + '</h3>' +
+        '<p class="cabin-card-desc">' + c.description[0].substring(0, 140) + '...</p>' +
+        '<div class="cabin-card-footer">' +
+        '<a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>' +
+        '<a href="cabin-details.html?id=' + c.id + '" style="font-size:var(--font-size-sm);color:var(--color-secondary);font-weight:500;">View Details</a>' +
+        '</div></div></div>';
+    });
+    document.getElementById('otherCabins').innerHTML = otherHTML;
+
+    /* ============================================================
+       IMAGE GALLERY
+       ============================================================ */
+    var currentImage = 0;
+    var images = cabin.images;
+    var galleryMainImg = document.getElementById('galleryMainImg');
+    var galleryThumbs = document.getElementById('galleryThumbs');
+    var galleryCounter = document.getElementById('galleryCounter');
+
+    function updateGallery(index) {
+      currentImage = index;
+      galleryMainImg.src = './' + images[index];
+      galleryMainImg.alt = cabin.name + ' \u2014 Photo ' + (index + 1);
+      galleryCounter.textContent = (index + 1) + ' / ' + images.length;
+
+      /* Update thumbnail active state */
+      var thumbs = galleryThumbs.querySelectorAll('.gallery-thumb');
+      thumbs.forEach(function(t, i) {
+        t.classList.toggle('active', i === index);
+      });
+
+      /* Scroll active thumbnail into view */
+      if (thumbs[index]) {
+        thumbs[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    }
+
+    /* Render thumbnails */
+    var thumbsHTML = '';
+    images.forEach(function(img, i) {
+      thumbsHTML += '<button class="gallery-thumb' + (i === 0 ? ' active' : '') + '" data-index="' + i + '" aria-label="View photo ' + (i + 1) + '">' +
+        '<img src="./' + img + '" alt="' + cabin.name + ' thumbnail ' + (i + 1) + '" loading="lazy">' +
+        '</button>';
+    });
+    galleryThumbs.innerHTML = thumbsHTML;
+
+    /* Set initial main image */
+    updateGallery(0);
+
+    /* Thumbnail clicks */
+    galleryThumbs.addEventListener('click', function(e) {
+      var thumb = e.target.closest('.gallery-thumb');
+      if (thumb) {
+        updateGallery(parseInt(thumb.dataset.index));
+      }
+    });
+
+    /* Arrow navigation */
+    document.getElementById('galleryPrev').addEventListener('click', function() {
+      updateGallery(currentImage > 0 ? currentImage - 1 : images.length - 1);
+    });
+    document.getElementById('galleryNext').addEventListener('click', function() {
+      updateGallery(currentImage < images.length - 1 ? currentImage + 1 : 0);
+    });
+
+    /* Click main image to open lightbox */
+    galleryMainImg.addEventListener('click', function() {
+      openLightbox(currentImage);
+    });
+    galleryMainImg.style.cursor = 'zoom-in';
+
+    /* ============================================================
+       LIGHTBOX
+       ============================================================ */
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxCounter = document.getElementById('lightboxCounter');
+    var lightboxIndex = 0;
+
+    function openLightbox(index) {
+      lightboxIndex = index;
+      lightboxImg.src = './' + images[index];
+      lightboxImg.alt = cabin.name + ' \u2014 Photo ' + (index + 1);
+      lightboxCounter.textContent = (index + 1) + ' / ' + images.length;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function lightboxNav(direction) {
+      if (direction === 'prev') {
+        lightboxIndex = lightboxIndex > 0 ? lightboxIndex - 1 : images.length - 1;
+      } else {
+        lightboxIndex = lightboxIndex < images.length - 1 ? lightboxIndex + 1 : 0;
+      }
+      lightboxImg.src = './' + images[lightboxIndex];
+      lightboxImg.alt = cabin.name + ' \u2014 Photo ' + (lightboxIndex + 1);
+      lightboxCounter.textContent = (lightboxIndex + 1) + ' / ' + images.length;
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', function() { lightboxNav('prev'); });
+    document.getElementById('lightboxNext').addEventListener('click', function() { lightboxNav('next'); });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+        closeLightbox();
+      }
+    });
+
+    /* Keyboard navigation */
+    document.addEventListener('keydown', function(e) {
+      if (lightbox.classList.contains('open')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') lightboxNav('prev');
+        if (e.key === 'ArrowRight') lightboxNav('next');
+      } else {
+        if (e.key === 'ArrowLeft') {
+          updateGallery(currentImage > 0 ? currentImage - 1 : images.length - 1);
+        }
+        if (e.key === 'ArrowRight') {
+          updateGallery(currentImage < images.length - 1 ? currentImage + 1 : 0);
+        }
+      }
+    });
+
+    /* ============================================================
+       COMMON PAGE JS
+       ============================================================ */
+
+    /* Mobile Navigation Toggle */
+    var navToggle = document.getElementById('navToggle');
+    var navMobile = document.getElementById('navMobile');
+    var navbar = document.getElementById('navbar');
+
+    navToggle.addEventListener('click', function() {
+      navToggle.classList.toggle('open');
+      navMobile.classList.toggle('open');
+      document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+    });
+
+    /* Navbar Scroll Effect */
+    window.addEventListener('scroll', function() {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    navbar.classList.add('scrolled');
+
+    /* Scroll Reveal Animation */
+    var revealElements = document.querySelectorAll('.reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(function(el) { revealObserver.observe(el); });
+
+    /* Inquiry Form */
+    var inquiryForm = document.getElementById('inquiryForm');
+    inquiryForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = document.getElementById('inquiryName');
+      var email = document.getElementById('inquiryEmail');
+      var phone = document.getElementById('inquiryPhone');
+      var valid = true;
+
+      [name, email, phone].forEach(function(f) { f.style.borderColor = ''; });
+
+      if (!name.value.trim()) { name.style.borderColor = '#c0392b'; valid = false; }
+      if (!email.value || !email.value.includes('@')) { email.style.borderColor = '#c0392b'; valid = false; }
+      if (!phone.value || phone.value.length < 10) { phone.style.borderColor = '#c0392b'; valid = false; }
+
+      if (valid) {
+        alert('Thank you for your inquiry about ' + cabin.name + '! We will contact you shortly. (This is a mockup \u2014 no backend connected.)');
+        inquiryForm.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
