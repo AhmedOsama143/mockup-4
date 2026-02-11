@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your European Hut account to start booking luxury private cabins with heated pools on Cairo-Alexandria Desert Road.">
+  <title>Create Account — European Hut | الكوخ الأوروبي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================
+       AUTH PAGE: REGISTER
+       ======================================== -->
+  <div class="auth-page">
+
+    <!-- Left: Brand Side -->
+    <div class="auth-brand">
+      <div class="auth-brand-content">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          <div>
+            <span class="nav-logo-text">European Hut</span>
+            <span class="nav-logo-arabic">الكوخ الأوروبي</span>
+          </div>
+        </a>
+        <h2>Join European Hut</h2>
+        <p>
+          Create an account to receive exclusive offers, manage your bookings,
+          and be the first to know when new cabins launch.
+        </p>
+        <div style="margin-top: var(--space-3xl); padding-top: var(--space-2xl); border-top: 1px solid rgba(255,255,255,0.1);">
+          <p style="font-size: var(--font-size-sm); color: rgba(255,255,255,0.5);">
+            4 exclusive cabins with heated pools, jacuzzi, and 100% privacy.
+            Starting from 7,000 EGP per day.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form Side -->
+    <div class="auth-form-side">
+      <div class="auth-form-container">
+
+        <div class="auth-nav">
+          <a href="index.html">&larr; Back to Home</a>
+        </div>
+
+        <h1>Create Account</h1>
+        <p class="auth-subtitle">Fill in your details to get started with European Hut.</p>
+
+        <form id="registerForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                class="form-input"
+                placeholder="First name"
+                required
+                autocomplete="given-name"
+              >
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                class="form-input"
+                placeholder="Last name"
+                required
+                autocomplete="family-name"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="regEmail" class="form-label">Email Address</label>
+            <input
+              type="email"
+              id="regEmail"
+              class="form-input"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-input"
+              placeholder="01XXXXXXXXX"
+              required
+              autocomplete="tel"
+            >
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="regPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                id="regPassword"
+                class="form-input"
+                placeholder="Min. 8 characters"
+                required
+                autocomplete="new-password"
+              >
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-input"
+                placeholder="Confirm password"
+                required
+                autocomplete="new-password"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" name="newsletter">
+              Subscribe to our newsletter for updates and special offers
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" name="terms" required>
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit">Create Account</button>
+        </form>
+
+        <div class="form-divider">
+          <span>or sign up with</span>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="social-btn">
+            <span class="social-icon"><span class="social-icon-google"></span></span>
+            Google
+          </button>
+          <button type="button" class="social-btn">
+            <span class="social-icon"><span class="social-icon-fb"></span></span>
+            Facebook
+          </button>
+        </div>
+
+        <div class="auth-footer">
+          Already have an account? <a href="login.html">Sign In</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    /* Basic Form Validation */
+    var registerForm = document.getElementById('registerForm');
+    registerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var fields = {
+        firstName: document.getElementById('firstName'),
+        lastName: document.getElementById('lastName'),
+        email: document.getElementById('regEmail'),
+        phone: document.getElementById('phone'),
+        password: document.getElementById('regPassword'),
+        confirmPassword: document.getElementById('confirmPassword')
+      };
+
+      var valid = true;
+
+      /* Reset borders */
+      Object.values(fields).forEach(function(f) { f.style.borderColor = ''; });
+
+      if (!fields.firstName.value.trim()) {
+        fields.firstName.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      if (!fields.lastName.value.trim()) {
+        fields.lastName.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      if (!fields.email.value || !fields.email.value.includes('@')) {
+        fields.email.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      if (!fields.phone.value || fields.phone.value.length < 10) {
+        fields.phone.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      if (!fields.password.value || fields.password.value.length < 8) {
+        fields.password.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      if (fields.password.value !== fields.confirmPassword.value) {
+        fields.confirmPassword.style.borderColor = '#c0392b';
+        valid = false;
+      }
+
+      var termsCheckbox = document.querySelector('input[name="terms"]');
+      if (!termsCheckbox.checked) {
+        valid = false;
+        termsCheckbox.closest('.form-checkbox').style.color = '#c0392b';
+      } else {
+        termsCheckbox.closest('.form-checkbox').style.color = '';
+      }
+
+      if (valid) {
+        alert('Registration form submitted successfully. (This is a mockup — no backend connected.)');
+      }
+    });
+  </script>
+
+</body>
+</html>

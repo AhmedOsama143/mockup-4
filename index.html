@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="European Hut — الكوخ الأوروبي — Luxury private cabin rentals with heated pools and 100% privacy on Cairo-Alexandria Desert Road, Egypt.">
+  <meta name="keywords" content="European Hut, cabin rental, Egypt cabins, luxury chalet, Cairo Alexandria, private pool, heated pool, الكوخ الأوروبي">
+  <title>European Hut — الكوخ الأوروبي | Luxury Private Cabins</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================
+       ANNOUNCEMENT BANNER
+       ======================================== -->
+  <div class="announcement-banner" id="announcement">
+    New cabins launching soon — More luxury, more options. <a href="cabins.html">Stay updated</a>
+    <button class="announcement-close" id="closeAnnouncement" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- ========================================
+       NAVIGATION
+       ======================================== -->
+  <nav class="navbar has-banner" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon" aria-hidden="true"></div>
+        <div>
+          <span class="nav-logo-text">European Hut</span>
+          <span class="nav-logo-arabic">الكوخ الأوروبي</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="cabins.html">Cabins</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-auth">
+        <a href="login.html" class="btn-login">Sign In</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="cabins.html">Cabins</a>
+    <a href="experience.html">Experience</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-mobile-auth">
+      <a href="login.html" class="btn btn-outline">Sign In</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-label">Cairo–Alexandria Desert Road</span>
+      <h1>Your Private <strong>European</strong> Escape in Egypt</h1>
+      <p class="hero-description">
+        Discover exclusive cabin retreats with heated pools, European-inspired interiors,
+        and absolute privacy — just 30 minutes past Sheikh Zayed.
+      </p>
+      <div class="hero-buttons">
+        <a href="cabins.html" class="btn btn-primary btn-lg">Explore Cabins</a>
+        <a href="https://wa.me/201200081890" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="hero-divider"></div>
+
+  <!-- ========================================
+       INTRODUCTION / ABOUT PREVIEW
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="story-section reveal">
+        <div class="story-image">
+          <img src="./assets/WhatsApp%20Image%202026-02-10%20at%202.58.15%20PM.jpeg" alt="European Hut cabin living room with European-inspired sofas and A-frame wooden ceiling">
+        </div>
+        <div class="story-content">
+          <span class="section-label">Welcome to European Hut</span>
+          <h2>Where European Elegance Meets Egyptian Warmth</h2>
+          <p>
+            Nestled along the Cairo–Alexandria Desert Road, European Hut offers a curated collection
+            of private cabins designed with a distinctly European aesthetic. Each retreat features
+            heated swimming pools, multiple bedrooms, and a guarantee of complete seclusion.
+          </p>
+          <p>
+            Whether you are celebrating with family, planning a couples' getaway, or gathering
+            with friends, our cabins deliver an experience that feels worlds away from the city —
+            yet remains remarkably close.
+          </p>
+          <div class="story-signature">
+            — The European Hut Team
+          </div>
+          <div style="margin-top: var(--space-xl);">
+            <a href="about.html" class="btn btn-outline">Learn Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FEATURED CABINS
+       ======================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
+        <span class="section-label">Our Collection</span>
+        <h2 class="section-title">Handpicked Cabins for Every Occasion</h2>
+        <p class="section-subtitle mx-auto">
+          From intimate retreats to grand family escapes, choose the cabin that perfectly
+          suits your vision of luxury.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- Cabin 1 -->
+        <div class="cabin-card reveal reveal-delay-1">
+          <div class="cabin-card-image">
+            <img src="./assets/WhatsApp%20Image%202026-02-10%20at%202.58.14%20PM%20%281%29.jpeg" alt="Cabin One — The Oasis: indoor heated pool with A-frame wooden ceiling" class="cabin-img-placeholder">
+            <span class="cabin-card-badge badge-popular">Best Seller</span>
+            <div class="cabin-card-price">
+              <span class="price-amount">12,000</span>
+              <span class="price-unit">EGP / day</span>
+            </div>
+          </div>
+          <div class="cabin-card-body">
+            <h3 class="cabin-card-title">Cabin One — The Oasis</h3>
+            <p class="cabin-card-desc">
+              A serene retreat with both indoor and outdoor heated pools, three spacious bedrooms,
+              and floor-to-ceiling windows that frame the landscape.
+            </p>
+            <div class="cabin-card-features">
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-bed"></div></div>
+                <span>3 Bedrooms</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-pool"></div></div>
+                <span>2 Heated Pools</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-privacy"></div></div>
+                <span>100% Privacy</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-clock"></div></div>
+                <span>Check-in 12 PM</span>
+              </div>
+            </div>
+            <div class="cabin-card-footer">
+              <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="cabins.html" style="font-size: var(--font-size-sm); color: var(--color-secondary); font-weight: 500;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabin 4 -->
+        <div class="cabin-card reveal reveal-delay-2">
+          <div class="cabin-card-image">
+            <img src="./assets/WhatsApp%20Image%202026-02-10%20at%206.34.43%20PM.jpeg" alt="Cabin Four — The Grand: night indoor glass pool with jacuzzi and hanging swing chair" class="cabin-img-placeholder">
+            <span class="cabin-card-badge badge-premium">Premium</span>
+            <div class="cabin-card-price">
+              <span class="price-amount">15,000</span>
+              <span class="price-unit">EGP / day</span>
+            </div>
+          </div>
+          <div class="cabin-card-body">
+            <h3 class="cabin-card-title">Cabin Four — The Grand</h3>
+            <p class="cabin-card-desc">
+              Our most prestigious offering — four bedrooms, a heated indoor glass pool,
+              private jacuzzi, and interiors that set a new standard for desert luxury.
+            </p>
+            <div class="cabin-card-features">
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-bed"></div></div>
+                <span>4 Bedrooms</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-pool"></div></div>
+                <span>Glass Pool</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-jacuzzi"></div></div>
+                <span>Jacuzzi</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-clock"></div></div>
+                <span>Check-in 12 PM</span>
+              </div>
+            </div>
+            <div class="cabin-card-footer">
+              <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="cabins.html" style="font-size: var(--font-size-sm); color: var(--color-secondary); font-weight: 500;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabin 3 -->
+        <div class="cabin-card reveal reveal-delay-3">
+          <div class="cabin-card-image">
+            <img src="./assets/WhatsApp%20Image%202026-02-10%20at%206.34.38%20PM%20%281%29.jpeg" alt="Cabin Three — The Retreat: night indoor heated pool from above with red mood lighting" class="cabin-img-placeholder">
+            <span class="cabin-card-badge badge-new">New</span>
+            <div class="cabin-card-price">
+              <span class="price-amount">11,000</span>
+              <span class="price-unit">EGP / day</span>
+            </div>
+          </div>
+          <div class="cabin-card-body">
+            <h3 class="cabin-card-title">Cabin Three — The Retreat</h3>
+            <p class="cabin-card-desc">
+              Three bedrooms paired with an indoor heated pool create the perfect setting
+              for a private family getaway or a quiet weekend escape.
+            </p>
+            <div class="cabin-card-features">
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-bed"></div></div>
+                <span>3 Bedrooms</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-pool"></div></div>
+                <span>Indoor Heated Pool</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-privacy"></div></div>
+                <span>100% Privacy</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-clock"></div></div>
+                <span>Check-in 2 PM</span>
+              </div>
+            </div>
+            <div class="cabin-card-footer">
+              <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="cabins.html" style="font-size: var(--font-size-sm); color: var(--color-secondary); font-weight: 500;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabin 2 -->
+        <div class="cabin-card reveal reveal-delay-4">
+          <div class="cabin-card-image">
+            <img src="./assets/WhatsApp%20Image%202026-02-10%20at%202.57.49%20PM%20%283%29.jpeg" alt="Cabin Two — The Haven: large outdoor pool with palm trees and green lawn" class="cabin-img-placeholder">
+            <span class="cabin-card-badge badge-value">Best Value</span>
+            <div class="cabin-card-price">
+              <span class="price-amount">7,000</span>
+              <span class="price-unit">EGP / day</span>
+            </div>
+          </div>
+          <div class="cabin-card-body">
+            <h3 class="cabin-card-title">Cabin Two — The Haven</h3>
+            <p class="cabin-card-desc">
+              Four master bedrooms, five bathrooms, and a refreshing pool make this our
+              most spacious and family-friendly cabin at an exceptional value.
+            </p>
+            <div class="cabin-card-features">
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-bed"></div></div>
+                <span>4 Bedrooms</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-bathroom"></div></div>
+                <span>5 Bathrooms</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-pool"></div></div>
+                <span>Swimming Pool</span>
+              </div>
+              <div class="cabin-feature">
+                <div class="cabin-feature-icon"><div class="icon-clock"></div></div>
+                <span>Check-in 2 PM</span>
+              </div>
+            </div>
+            <div class="cabin-card-footer">
+              <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="cabins.html" style="font-size: var(--font-size-sm); color: var(--color-secondary); font-weight: 500;">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center reveal" style="margin-top: var(--space-3xl);">
+        <a href="cabins.html" class="btn btn-outline btn-lg">View All Cabins</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       KEY FEATURES / AMENITIES
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
+        <span class="section-label">Why European Hut</span>
+        <h2 class="section-title">An Experience Beyond Accommodation</h2>
+        <p class="section-subtitle mx-auto">
+          Every detail has been considered to deliver a stay that is private,
+          comfortable, and unmistakably luxurious.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card-icon">
+            <div class="icon-pool"></div>
+          </div>
+          <h3>Heated Swimming Pools</h3>
+          <p>Indoor and outdoor heated pools available year-round, including a stunning glass pool in our premium cabin.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card-icon">
+            <div class="icon-privacy"></div>
+          </div>
+          <h3>100% Privacy</h3>
+          <p>Every cabin is a private compound — no shared spaces, no neighboring guests. Your retreat is entirely your own.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card-icon">
+            <div class="icon-heart"></div>
+          </div>
+          <h3>European-Inspired Design</h3>
+          <p>Interiors crafted with a European aesthetic — elegant finishes, thoughtful layouts, and a refined atmosphere throughout.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card-icon">
+            <div class="icon-guests"></div>
+          </div>
+          <h3>Family-Friendly</h3>
+          <p>Designed for families and couples, accommodating up to 8 guests with spacious bedrooms and living areas.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card-icon">
+            <div class="icon-location"></div>
+          </div>
+          <h3>Prime Desert Location</h3>
+          <p>30 minutes past Sheikh Zayed on the Cairo–Alexandria Desert Road, with supermarkets and essentials nearby.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card-icon">
+            <div class="icon-camera"></div>
+          </div>
+          <h3>Photography Sessions</h3>
+          <p>Professional filming and photography sessions available upon request — perfect for special occasions and content creation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       STATS SECTION
+       ======================================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Exclusive Cabins</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Guests Per Cabin</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Privacy Guaranteed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">30</div>
+          <div class="stat-label">Minutes from Sheikh Zayed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CALL TO ACTION
+       ======================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label">Ready to Escape?</span>
+        <h2>Book Your Private Cabin Today</h2>
+        <p>
+          Contact us directly for instant availability and personalized assistance.
+          Our team is ready to help you plan the perfect stay.
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+201200081890" class="btn btn-primary btn-lg">Call Now</a>
+          <a href="https://wa.me/201200081890" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+        <a href="tel:+201200081890" class="cta-phone">01200081890</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon" aria-hidden="true"></div>
+            <div>
+              <span class="nav-logo-text">European Hut</span>
+              <span class="nav-logo-arabic">الكوخ الأوروبي</span>
+            </div>
+          </a>
+          <p>
+            Luxury private cabin rentals on the Cairo–Alexandria Desert Road.
+            European elegance, heated pools, and absolute privacy — your perfect escape awaits.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener" aria-label="Instagram">
+              <div class="icon-instagram"></div>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063992444361&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook">
+              <div class="icon-facebook"></div>
+            </a>
+            <a href="https://www.tiktok.com/@european.gott" target="_blank" rel="noopener" aria-label="TikTok">
+              <div class="icon-camera"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Our Cabins</a></li>
+            <li><a href="experience.html">The Experience</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Cabins -->
+        <div>
+          <h4>Our Cabins</h4>
+          <ul class="footer-links">
+            <li><a href="cabins.html">Cabin One — The Oasis</a></li>
+            <li><a href="cabins.html">Cabin Two — The Haven</a></li>
+            <li><a href="cabins.html">Cabin Three — The Retreat</a></li>
+            <li><a href="cabins.html">Cabin Four — The Grand</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="icon-phone" style="flex-shrink:0;margin-top:3px;"></div>
+            <a href="tel:+201200081890">01200081890</a>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon-location" style="flex-shrink:0;margin-top:3px;"></div>
+            <span>Cairo–Alexandria Desert Road, 30 min past Sheikh Zayed</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon-instagram" style="flex-shrink:0;margin-top:3px;"></div>
+            <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener">@bungalow_hut</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 European Hut — الكوخ الأوروبي. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       JAVASCRIPT
+       ======================================== -->
+  <script>
+    /* Announcement Banner */
+    const banner = document.getElementById('announcement');
+    const closeBtn = document.getElementById('closeAnnouncement');
+    const navbar = document.getElementById('navbar');
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        banner.classList.add('hidden');
+        navbar.classList.remove('has-banner');
+      });
+    }
+
+    /* Mobile Navigation Toggle */
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+
+    if (navToggle) {
+      navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('open');
+        navMobile.classList.toggle('open');
+        document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+      });
+    }
+
+    /* Navbar Scroll Effect */
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    /* Scroll Reveal Animation */
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(function(el) {
+      revealObserver.observe(el);
+    });
+
+    /* Smooth Scroll for Anchor Links */
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
